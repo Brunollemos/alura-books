@@ -35,6 +35,7 @@
 
 .botoes {
     display: flex;
+    align-items: center;
 }
 
 .card {
