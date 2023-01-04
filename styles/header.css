@@ -78,7 +78,8 @@
     }
 
     .container__imagem-transparente,
-    .cabecalho__menu-hamburguer {
+    .cabecalho__menu-hamburguer,
+    .opcoes__botao {
         display: none;
     }
 
@@ -95,5 +96,10 @@
     .opcoes__link {
         text-decoration: none;
         color: var(--preto);
+    }
+
+    .opcoes__botao:checked ~ .lista-menu {
+        display: block;
+        width: auto;
     }
 }
