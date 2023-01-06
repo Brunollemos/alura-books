@@ -54,4 +54,8 @@ hr {
         border-left: 1px solid var(--cinza-claro);
         padding-left: 1em;
     }
+
+    .lista-rodape__link:hover {
+        color: var(--laranja);
+    }
 }

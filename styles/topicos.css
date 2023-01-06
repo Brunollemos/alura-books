@@ -61,4 +61,9 @@
     .topicos__lista {
         padding: 0;
     }
+
+    .topicos__link:hover {
+        color: var(--laranja);
+        background-color: var(--branco);
+    }
 }
