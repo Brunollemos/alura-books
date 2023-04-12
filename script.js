@@ -1,4 +1,4 @@
-var consultaCep = fetch("https://viacep.com.br/ws/01001000/json/")
+/* var consultaCep = fetch("https://viacep.com.br/ws/01001000/json/")
     .then(resposta => resposta.json())
     .then(r => {
         if (r.erro) {
@@ -9,4 +9,12 @@ var consultaCep = fetch("https://viacep.com.br/ws/01001000/json/")
     .catch(erro => console.log(erro))
     .finally(mensagem => console.log("Busca finalizada"));
 
-console.log(consultaCep);
+console.log(consultaCep); */
+
+async function buscaEndereco() {
+    var consultaCep = await fetch("https://viacep.com.br/ws/01001000/json/");
+    var consultaCepConvertida = await consultaCep.json();
+    console.log(consultaCepConvertida);
+}
+
+buscaEndereco();
