@@ -5,6 +5,15 @@ async function buscaEndereco(cep) {
         if (consultaCepConvertida.erro) {
             throw Error("CEP inválido");
         }
+        var cidade = document.getElementById("cidade");
+        var logradouro = document.getElementById("endereco");
+        var bairro = document.getElementById("bairro");        
+        var estado = document.getElementById("estado");
+
+        cidade.value = consultaCepConvertida.localidade;
+        logradouro.value = consultaCepConvertida.logradouro;
+        bairro.value = consultaCepConvertida.bairro;
+        estado.value = consultaCepConvertida.uf;
         console.log(consultaCepConvertida);
         return consultaCepConvertida;
 
@@ -13,22 +22,5 @@ async function buscaEndereco(cep) {
     }    
 }
 
-//exemplo de uso do Promise.all
-let = ceps = ['01001000', '01001001'];
-let conjuntoCeps = ceps.map(valores => buscaEndereco(valores));
-Promise.all(conjuntoCeps).then(respostas => console.log(respostas));
-
-
-//exemplo de uso de fetch sem metodo async
- /*var consultaCep = fetch("https://viacep.com.br/ws/01001000/json/")
-    .then(resposta => resposta.json())
-    .then(r => {
-        if (r.erro) {
-            throw Error("CEP inválido");
-        } else 
-            console.log(r)
-        })
-    .catch(erro => console.log(erro))
-    .finally(mensagem => console.log("Busca finalizada"));
-
-console.log(consultaCep);*/
+var cep = document.getElementById("cep");
+cep.addEventListener('focusout', () => buscaEndereco(cep.value));
