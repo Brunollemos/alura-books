@@ -1,69 +1,69 @@
 .topicos {
-    background: var(--azul-degrade);
-    text-align: center;
-    padding: 1em 0;
+	background: var(--azul-degrade);
+	text-align: center;
+	padding: 1em 0;
 }
 
 .topicos h2 {
-    text-transform: uppercase;
+	text-transform: uppercase;
 }
 
 .topicos__titulo {
-    color: var(--branco);
-    font-weight: 300;
-    margin-bottom: 1em;
+	color: var(--branco);
+	font-weight: 300;
+	margin-bottom: 1em;
 }
 
 .topicos__lista {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 0 1em;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 0 1em;
 }
 
 .topicos__item {
-    margin: 1.5em 0 1.5em 1em;
+	margin: 1.5em 0 1.5em 1em;
 }
 
 .topicos__link {
-    color: var(--branco);
-    padding: 1em;
-    background-color: var(--laranja);
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 700;
+	color: var(--branco);
+	padding: 1em;
+	background-color: var(--laranja);
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: 700;
 }
 
 @media screen and (min-width: 1024px) {
-    .topicos__titulo {
-        font-size: 24px;
-    }
+	.topicos__titulo {
+		font-size: 24px;
+	}
 
-    .topicos__link {
-        font-size: 24px;
-    }
+	.topicos__link {
+		font-size: 24px;
+	}
 
-    .topicos__item {
-        margin: 1.5em 0 3em 1em;
-    }
+	.topicos__item {
+		margin: 1.5em 0 3em 1em;
+	}
 
-    .topicos__lista {
-        padding: 0.5em 5em 0 5em;
-        align-content: center;
-    }
+	.topicos__lista {
+		padding: 0.5em 5em 0 5em;
+		align-content: center;
+	}
 }
 
 @media screen and (min-width: 1728px) {
-    .topicos {
-        padding: 3em 30vw;
-    }
+	.topicos {
+		padding: 3em 30vw;
+	}
 
-    .topicos__lista {
-        padding: 0;
-    }
+	.topicos__lista {
+		padding: 0;
+	}
 
-    .topicos__link:hover {
-        color: var(--laranja);
-        background-color: var(--branco);
-    }
+	.topicos__link:hover {
+		color: var(--laranja);
+		background-color: var(--branco);
+	}
 }
